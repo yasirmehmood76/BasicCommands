@@ -35,3 +35,6 @@ git remote -v
 git remote add ogirin https://github.com/yasirmehmood76/GihubBasicCommands.git
 2- Pull your code from github using the remote
 git pull origin master
+
+Clone: Get a working copy of the remote repository.
+Pull: I am working on this, please get me the new changes that may be updated by others.
