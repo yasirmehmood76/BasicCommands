@@ -1,0 +1,30 @@
+1- git --version
+2- git config --global user.name "Your Name"
+   git config --global user.email "your@email.com"
+3- git init   \\initializes empty git repo
+4- ls -a  \\views hidden files and folders
+5- git status
+6- touch index.html  \\creates new file
+
+\*How to add commit*\
+7a- git add index.html
+7b- git commit -m "Commit Message"
+
+9- git add.  
+10- git log   \\ gives the history of commits
+11- git checkout <commit-hash>  \\goto particular commit
+12- git branch  \\lists the branches
+13- git checkout master  \\ goto master branch
+14- git branch <branch-name>
+15- git merge <branch-name>
+
+Git Hub
+
+Pushing and Existing Reop to GitHub
+1- Add/commit your code locally
+2- Go to Github and make a repo
+3- Connect your local repo to the github repo (add a remote)
+git remote -v  //checks the list of added remotes
+git remote add origin https://github.com/yasirmehmood76/GithubBasicCommands.git
+4- Push your code up to github using the new remote
+git push -u origin master
