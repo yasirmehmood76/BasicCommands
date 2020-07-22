@@ -38,3 +38,10 @@ git pull origin master
 
 Clone: Get a working copy of the remote repository.
 Pull: I am working on this, please get me the new changes that may be updated by others.
+
+git clone means you are making a copy of the repository in your system.
+git fork means you are copying the repository to your Github account.
+git pull means you are fetching the last modified repository.
+git push means you are returning the repository after modifying it.
+In layman's term:
+git clone is downloading and git pull is refreshing.
