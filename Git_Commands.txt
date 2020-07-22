@@ -15,7 +15,7 @@
 11- git checkout <commit-hash>  \\goto particular commit
 12- git branch  \\lists the branches
 13- git checkout master  \\ goto master branch
-14- git branch <branch-name>
+14- git branch <branch-name> \\creates new branch
 15- git merge <branch-name>
 
 Git Hub
