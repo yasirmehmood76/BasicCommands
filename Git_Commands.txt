@@ -14,7 +14,8 @@
 10- git log   \\ gives the history of commits
 11- git checkout <commit-hash>  \\goto particular commit
 12- git branch  \\lists the branches
-13- git checkout master  \\ goto master branch
+13a- git checkout master  \\ goto master branch
+13b- git checkout -b master
 14- git branch <branch-name>
 15- git merge <branch-name>
 
@@ -35,6 +36,20 @@ git remote -v
 git remote add ogirin https://github.com/yasirmehmood76/GihubBasicCommands.git
 2- Pull your code from github using the remote
 git pull origin master
+
+Clone an Existing Repo
+- git status
+- mkdir DeepFake
+- cd DeepFake
+- git status
+- git clone https://github.com/deepfakes/faceswap.git
+
+Make a Contribution
+1- Make a Fork Repo on Github
+2- Pull Forked repo in local machine
+3- Add commits
+4- Push Forked repo to Github
+5- Create Pull Request
 
 Clone: Get a working copy of the remote repository.
 Pull: I am working on this, please get me the new changes that may be updated by others.
