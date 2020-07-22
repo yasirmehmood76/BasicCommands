@@ -28,3 +28,10 @@ git remote -v  //checks the list of added remotes
 git remote add origin https://github.com/yasirmehmood76/GithubBasicCommands.git
 4- Push your code up to github using the new remote
 git push -u origin master
+
+Pulling an Exsiting Repo from Github
+1- Connect your local repo to the github repo (add a remote)
+git remote -v
+git remote add ogirin https://github.com/yasirmehmood76/GihubBasicCommands.git
+2- Pull your code from github using the remote
+git pull origin master
