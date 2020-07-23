@@ -59,4 +59,7 @@ git fork means you are copying the repository to your Github account.
 git pull means you are fetching the last modified repository.
 git push means you are returning the repository after modifying it.
 In layman's term:
-git clone is downloading and git pull is refreshing.
+git clone is downloading and git pull is refreshing.'
+
+Disable Git SSL verification in the server hosting
+- git config --global http.sslVerify false
