@@ -7,17 +7,25 @@
 6- touch index.html  \\creates new file
 
 \*How to add commit*\
-7a- git add index.html
-7b- git commit -m "Commit Message"
+7- git add index.html
+8- git commit -m "Commit Message"
 
-9- git add.  
-10- git log   \\ gives the history of commits
-11- git checkout <commit-hash>  \\goto particular commit
-12- git branch  \\lists the branches
-13a- git checkout master  \\ goto master branch
-13b- git checkout -b master
-14- git branch <branch-name>
-15- git merge <branch-name>
+9- git add <file-name>
+10- git add '.'  \\adds all modified files for commit 
+11- git log   \\ gives the history of commits
+12- git checkout <commit-hash>  \\goto particular commit
+13- git branch  \\lists the current branch
+14- git branch -a \\lists all branches
+15- git checkout master  \\ goto master branch
+16- git checkout -b master
+17- git branch <branch-name>
+18- git merge <branch-name>   \\merges current branch to <branch-name>
+19- git restore <file-name>  \\restore back the changes being made to file
+
+20- git reset --soft HEAD~2  \\undo the last two commits
+21- git push origin +yourbranchname   \\replaces the remote branch with local branch. It's useful when someone suggest to make changes
+pull request. Instead of committing and creating a new pull request, add as many number of commits as you want and then replace the existing
+branch in remote with the same branch from local. It will also shows the comments made by reviewer.
 
 Git Hub
 
@@ -49,6 +57,7 @@ Make a Contribution
 2- Pull Forked repo in local machine
 3- Add commits
 4- Push Forked repo to Github
+git push -u origin feature/JunitTesting
 5- Create Pull Request
 
 Clone: Get a working copy of the remote repository.
@@ -59,7 +68,10 @@ git fork means you are copying the repository to your Github account.
 git pull means you are fetching the last modified repository.
 git push means you are returning the repository after modifying it.
 In layman's term:
-git clone is downloading and git pull is refreshing.'
+git clone is downloading and git pull is refreshing.
+
+Change Github/Bitbucket Password:
+1- Goto Control Panel -> User Accounts -> Window Credential Managers
 
 Disable Git SSL verification in the server hosting
 - git config --global http.sslVerify false
