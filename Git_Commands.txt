@@ -12,7 +12,7 @@
 
 9- git add <file-name>
 10- git add '.'  \\adds all modified files for commit 
-11- git log   \\ gives the history of commits
+11- git log   \\ gives the history of commits, press button 'q' to exit from log mode
 12- git checkout <commit-hash>  \\goto particular commit
 13- git branch  \\lists the current branch
 14- git branch -a \\lists all branches
