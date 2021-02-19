@@ -14,7 +14,7 @@
 10- git add '.'  \\adds all modified files for commit 
 11- git log   \\ gives the history of commits, press button 'q' to exit from log mode
 12- git checkout <commit-hash>  \\goto particular commit
-13- git branch  \\lists the current branch
+13- git branch  \\lists the current branch, if branch does not exist creates new branch
 14- git branch -a \\lists all branches
 15- git checkout master  \\ goto master branch
 16- git checkout -b master
