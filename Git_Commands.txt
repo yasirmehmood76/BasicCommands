@@ -17,7 +17,7 @@
 13- git branch  \\lists the current branch, if branch does not exist creates new branch
 14- git branch -a \\lists all branches
 15- git checkout master  \\ goto master branch
-16- git checkout -b master
+16- git checkout -b master \\creates new branch if it doesn't exist
 17- git branch <branch-name>
 18- git merge <branch-name>   \\merges current branch to <branch-name>
 19- git restore <file-name>  \\restore back the changes being made to file
