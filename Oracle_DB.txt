@@ -1,0 +1,2 @@
+1- SELECT table_name FROM all_tables
+1- SELECT * FROM user_tab_cols WHERE table_name= 'MPA_TRANSACTION_STATUS'
