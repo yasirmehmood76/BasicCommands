@@ -30,6 +30,11 @@ branch in remote with the same branch from local. It will also shows the comment
 22a- git branch -d localBranchName   \\delete branch locally
 22b- git branch -D localBranchName  \\delete branch locally
 23- git push origin --delete remoteBranchName  \\delete branch remotely
+24- Merge 'release/dotrelease' to 'feature/mup-cbrs-inquiry'
+a- git pull
+b- git checkout feature/mup-cbrs-inquiry
+c- git merge feature/dotrelease
+d- git push
 
 Git Hub
 
