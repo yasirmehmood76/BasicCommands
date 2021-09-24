@@ -1,4 +1,4 @@
-1- cls  	//clears the screen
-2- dir  	//shows files in current dirctory
-3- cd {folder/file_name} 	//selects file or folder
-4- cd..  	//move up in the directory
+- cls  	//clears the screen
+- dir  	//shows files in current dirctory
+- cd {folder/file_name} 	//selects file or folder
+- cd..  	//move up in the directory
