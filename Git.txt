@@ -1,86 +1,87 @@
-1- git --version
-2- git config --global user.name "Your Name"
-   git config --global user.email "your@email.com"
-3- git init   \\initializes empty git repo
-4- ls -a  \\views hidden files and folders
-5- git status
-6- touch index.html  \\creates new file
-
-\*How to add commit*\
-7- git add index.html
-8- git commit -m "Commit Message"
-
-9- git add <file-name>
-10- git add '.'  \\adds all modified files for commit 
-11- git log   \\ gives the history of commits, press button 'q' to exit from log mode
-12- git checkout <commit-hash>  \\goto particular commit
-13- git branch  \\lists the current branch, if branch does not exist creates new branch
-14- git branch -a \\lists all branches
-15- git checkout master  \\ goto master branch
-16- git checkout -b master \\creates new branch if it doesn't exist
-17- git branch <branch-name>
-18- git merge <branch-name>   \\merges current branch to <branch-name>
-19- git restore <file-name>  \\restore back the changes being made to file
-
-20- git reset --soft HEAD~2  \\undo the last two commits
-21- git push origin +yourbranchname   \\replaces the remote branch with local branch. It's useful when someone suggest to make changes
-pull request. Instead of committing and creating a new pull request, add as many number of commits as you want and then replace the existing
-branch in remote with the same branch from local. It will also shows the comments made by reviewer.
-
-22a- git branch -d localBranchName   \\delete branch locally
-22b- git branch -D localBranchName  \\delete branch locally
-23- git push origin --delete remoteBranchName  \\delete branch remotely
-24- Merge 'release/dotrelease' to 'feature/mup-cbrs-inquiry'
-a- git pull
-b- git checkout feature/mup-cbrs-inquiry
-c- git merge feature/dotrelease
-d- git push
-
-Git Hub
-
-Pushing and Existing Reop to GitHub
-1- Add/commit your code locally
-2- Go to Github and make a repo
-3- Connect your local repo to the github repo (add a remote)
-git remote -v  //checks the list of added remotes
-git remote add origin https://github.com/yasirmehmood76/GithubBasicCommands.git
-4- Push your code up to github using the new remote
-git push -u origin master
-
-Pulling an Exsiting Repo from Github
-1- Connect your local repo to the github repo (add a remote)
-git remote -v
-git remote add ogirin https://github.com/yasirmehmood76/GihubBasicCommands.git
-2- Pull your code from github using the remote
-git pull origin master
-
-Clone an Existing Repo
+- git --version
+- git config --global user.name "Your Name"
+- git config --global user.email "your@email.com"
+- git init   \\initializes empty git repo
+- ls -a  \\views hidden files and folders
 - git status
-- mkdir DeepFake
-- cd DeepFake
-- git status
-- git clone https://github.com/deepfakes/faceswap.git
+- touch index.html  \\creates new file
 
-Make a Contribution
-1- Make a Fork Repo on Github
-2- Pull Forked repo in local machine
-3- Add commits
-4- Push Forked repo to Github
-git push -u origin feature/JunitTesting
-5- Create Pull Request
+- How to add commit
+	- git add index.html
+	- git commit -m "Commit Message"
 
-Clone: Get a working copy of the remote repository.
-Pull: I am working on this, please get me the new changes that may be updated by others.
+- git add <file-name>
+- git add '.'  \\adds all modified files for commit 
+- git log   \\ gives the history of commits, press button 'q' to exit from log mode
+- git checkout <commit-hash>  \\goto particular commit
+- git branch  \\lists the current branch, if branch does not exist creates new branch
+- git branch -a \\lists all branches
+- git branch -r \\lists feature + release branches
+- git show-branch \\lists all commits in current branch
+- git checkout master  \\ goto master branch
+- git checkout -b master \\creates new branch if it doesn't exist
+- git branch <branch-name>
+- git merge <branch-name>   \\merges current branch to <branch-name>
+- git restore <file-name>  \\restore back the changes being made to file
 
-git clone means you are making a copy of the repository in your system.
-git fork means you are copying the repository to your Github account.
-git pull means you are fetching the last modified repository.
-git push means you are returning the repository after modifying it.
-In layman's term:
-git clone is downloading and git pull is refreshing.
+- git reset --soft HEAD~2  \\undo the last two commits
+- git push origin +yourbranchname   \\replaces the remote branch with local branch. It's useful when someone suggest to make changes
+  pull request. Instead of committing and creating a new pull request, add as many number of commits as you want and then replace the existing
+  branch in remote with the same branch from local. It will also shows the comments made by reviewer.
 
-Change Github/Bitbucket Password:
-1- Goto Control Panel -> User Accounts -> Window Credential Managers
+- git branch -d localBranchName   \\delete branch locally
+- git branch -D localBranchName  \\delete branch locally
+- git push origin --delete remoteBranchName  \\delete branch remotely
+- Merge 'release/dotrelease' to 'feature/mup-cbrs-inquiry'
+	- git pull
+	- git checkout feature/mup-cbrs-inquiry
+	- git merge feature/dotrelease
+	- git push
 
-Disable Git SSL verification in the server hosting
-- git config --global http.sslVerify false
+*Git Hub*
+
+- Pushing and Existing Reop to GitHub
+	- Add/commit your code locally
+	- Go to Github and make a repo
+	- Connect your local repo to the github repo (add a remote)
+		git remote -v  //checks the list of added remotes
+		git remote add origin https://github.com/yasirmehmood76/GithubBasicCommands.git
+	- Push your code up to github using the new remote
+		git push -u origin master
+
+- Pulling an Exsiting Repo from Github
+	- Connect your local repo to the github repo (add a remote)
+		git remote -v
+		git remote add ogirin https://github.com/yasirmehmood76/GihubBasicCommands.git
+- Pull your code from github using the remote
+	- git pull origin master
+
+- Clone an Existing Repo
+	- git status
+	- mkdir DeepFake
+	- cd DeepFake
+	- git status
+	- git clone https://github.com/deepfakes/faceswap.git
+
+- Make a Contribution
+	- Make a Fork Repo on Github
+	- Pull Forked repo in local machine
+	- Add commits
+	- Push Forked repo to Github
+		git push -u origin feature/JunitTesting
+	- Create Pull Request
+
+- Clone: Get a working copy of the remote repository.
+- Pull: I am working on this, please get me the new changes that may be updated by others.
+
+- git clone means you are making a copy of the repository in your system.
+- git fork means you are copying the repository to your Github account.
+- git pull means you are fetching the last modified repository.
+- git push means you are returning the repository after modifying it.
+- In layman's term: git clone is downloading and git pull is refreshing.
+
+- Change Github/Bitbucket Password:
+	- Goto Control Panel -> User Accounts -> Window Credential Managers
+
+- Disable Git SSL verification in the server hosting
+	- git config --global http.sslVerify false
