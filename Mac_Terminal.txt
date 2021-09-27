@@ -1,0 +1,13 @@
+- cd ~                      //goes to root directory
+- cd /volumes               //list all volumes on drive
+- cd Yasir                  //selects directory
+- cd 'Macintosh HD'         //selects directory
+- cd ..                     //goto one step up
+- pwd                       //lists current path
+- ls                        //lists all files in current directory
+- ls -l                     //lists all files with username
+- ls -a                     //lists all + hidden files
+- touch test.txt            //creates new test file
+- rm test.txt               //deletes test file
+- open -e test.txt          //open test file for editing
+- source test.txt           //reloads file in terminal
