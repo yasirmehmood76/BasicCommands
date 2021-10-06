@@ -1,0 +1,40 @@
+See for Reference Manual: https://dev.mysql.com/doc/refman/8.0/en/alter-table-examples.html
+
+>> CD\
+>> "C:\Program Files\MYSQL\MYSQL Server 8.0\bin\mysqladmin" -u root -p version
+>> "C:\Program Files\MYSQL\MYSQL Server 8.0\bin\mysqld"
+
+To start or stop MySQL Server
+1- press window key + R
+2- type: services.msc
+3- Look for 'MYSQL80'
+4- Right click start/stop
+5- Refresh to see the updated status
+
+>> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';  //changing the password
+>> SELECT USER();
+>> SELECT CURRERNT_USER();
+>> SHOW DATABASES;
+>> CREATE DATABASE employee;
+>> DROP DATABASE employee;
+>> USE employee;
+>> SHOW TABLES;
+>> CREATE TABLE person(id int(11) unsinged auto_increment primary key not null,
+	username varchar(25) not null, password varchar(25) not null);
+>> DESCRIBE person;
+>> ALTER TABLE person ADD email varchar(40) not null;
+>> INSERT INTO person(username, password, email)
+	       values('yasir', '123', 'yasir@alumni.nd.edu');
+>> SELECT * FROM person;
+>> SELECT username FROM person;
+>> SELECT * FROM person WHERE id=1;
+>> SELECT * FROM person WHERE username='yasir' ORDER BY id DESC;  // DESC= descending
+>> UPDATE person SET password='890' WHERE username='yasir';
+>> UPDATE person SET password='000';
+>> DELETE FROM person WHERE email='yasirmehmood76@gmail.com';
+>> ALTER TABLE person DROP password;
+>> DELETE * FROM person WHERE username IN('yasir','mehmood');
+>> SELECT DISTINCT username FROM person;
+>> SELECT MAX(id) FROM person;
+>> SELECT * FROM person WHERE username='yasir' AND email='yasir@alumni.nd.edu';
+>> SELECT * FROM person WHERE username='yasir' OR email='yasir@alumni.nd.edu';
