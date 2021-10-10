@@ -1,0 +1,31 @@
+- Installation Process for MacOS
+	- Download MongoDB community server for Mac i.e. moongodb-macos-x86_64-5.0.3.tagz.
+	- Extract the tar in a folder.
+	- Create /data/db directory.
+	- Create Environment Variable.
+		- cd ~
+		- open .zshrc
+		- add following lines
+			- export MONGO_PATH=/volumes/Yasir/dev/mongodb-macos-x86_64-5.0.3
+			- export PATH=$PATH:$MONGO_PATH/bin
+		- source .zshrc
+
+- Running MongoDB
+	- Open a terminal and run the command
+		- mongod
+		- mongod --dbpath /volumes/Yasir/dev/mongodb-macos-x86_64-5.0.3/data/db
+		- mongod --dbport 27017 --dbpath /volumes/Yasir/dev/mongodb-macos-x86_64-5.0.3/data/db
+	- Open another terminal and run the command
+		- mongo
+
+- mongo --version
+- use admin
+  db.createUser(
+	{
+	  user: "myUserAdmin".
+	  pwd: "abc123",
+	  roles: [{role: "userAdminAnyDatabase:, db: "admin"},
+		  {role: "dbAdminAnyDatabase:, db: "admin"},
+		  {role: "readWriteAnyDatabase:, db: "admin"}]
+	}
+  )
