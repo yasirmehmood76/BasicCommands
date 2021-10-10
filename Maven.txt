@@ -1,3 +1,15 @@
+- Installation Process for MacOS
+	- Download maven binary for Mac i.e. apache-maven-3.8.2-bin.tar.gz
+	- Extract the tar in a folder.
+	- Create Environment Variable.
+		- cd ~
+		- open .zshrc
+		- add following lines
+			- export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/contents/Home"
+			- export M2_HOME=/volumes/Yasir/dev/apache-maven-3.8.2
+			- export PATH=$PATH:$M2_HOME/bin
+		- source .zshrc
+
 - mvn clean
 - mvn install -DskipTests
 - mvn -Pdev
