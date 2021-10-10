@@ -1,6 +1,11 @@
 - clear                     //clear the terminal screen
 - cd ~                      //goes to root directory
 - cd /volumes               //list all volumes on drive
+- cd /Library
+- cd /Library/Java/JavaVirtualMachines      //jdk path
+- cd /usr
+- cd /Users
+- cd /Users/yasir/.m2       //java local repository path
 - cd Yasir                  //selects directory
 - cd 'Macintosh HD'         //selects directory
 - cd ..                     //goto one step up
@@ -8,9 +13,16 @@
 - ls                        //lists all files in current directory
 - ls -l                     //lists all files with username
 - ls -a                     //lists all + hidden files
+- ls -al
 - touch test.txt            //creates new test file
 - rm test.txt               //deletes test file
 - open -e test.txt          //open test file for editing
 - source test.txt           //reloads file in terminal
 - control+c                 //halts terminal
 - command+shift+.           //when pressed in any folders, appears/disappears hidden files
+
+- If MacOS doesn't allow installation;
+	- Goto System Preferences > Security & Privacy > General
+	- Click on 'Allow Anyway' button
+	- run command or dmg file again
+	- A popup window will open asking for a permission to open the blocked file
