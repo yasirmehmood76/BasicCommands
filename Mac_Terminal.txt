@@ -1,3 +1,14 @@
+- On macOS 10.15 Catalina and later, the default Terminal shell switch from the bash (Bourne-again shell) to zsh (Z shell).
+- For bash shell, we can put the environment variables at ~/.bash_profile or ~/.bashrc.
+- For zsh shell, we can put the environment variables at ~/.zshenv or ~/.zshrc.
+- We can print the $SHELL environment variable to determine the current shell you are using.
+	- echo $SHELL
+- If MacOS doesn't allow installation;
+	- Goto System Preferences > Security & Privacy > General
+	- Click on 'Allow Anyway' button
+	- run command or dmg file again
+	- A popup window will open asking for a permission to open the blocked file
+
 - clear                     //clear the terminal screen
 - cd ~                      //goes to root directory
 - cd /volumes               //list all volumes on drive
@@ -21,9 +32,3 @@
 - control+c                 //halts terminal
 - command+shift+.           //when pressed in any folders, appears/disappears hidden files
 - echo $JAVA_HOME
-
-- If MacOS doesn't allow installation;
-	- Goto System Preferences > Security & Privacy > General
-	- Click on 'Allow Anyway' button
-	- run command or dmg file again
-	- A popup window will open asking for a permission to open the blocked file
