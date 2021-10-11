@@ -1,2 +1,37 @@
+- Installation Process for MacOS
+	- Get Virtual Box
+	  https://www.virtualbox.org/wiki/Downloads
+	- Download 'Oracle DB Developer VM' (DeveloperDaysVM2019-05-31_20.ova)
+	  https://www.oracle.com/database/technologies/databaseappdev-vm.html
+	- Open Virtual Box, import 'DeveloperDaysVM2019-05-31_20.ova' file, and start 'Oracle DB Developer VM'.
+	- Download, install and run Oracle 'SQLDeveloper' tool.
+	- Use following DB details;
+		- Admin Details
+			- Username: sys
+			- Role: SYSDBA
+			- Password: oracle
+			- Connection Type: Basic
+			- Hostname: localhost
+			- Port: 1521
+			- Service Name: orcl
+		- Admin Details
+			- Username: sys as sysdba
+			- Password: oracle
+			- Connection Type: Custom JDBC
+			- Host: jdbc:oracle:thin:@//localhost:1521/orcl
+		- Other Details
+			- Username: hr
+			- Role: Default
+			- Password: oracle
+			- Connection Type: Basic
+			- Hostname: localhost
+			- Port: 1521
+			- Service Name: orcl
+		- Other Details
+			- Username: hr
+			- Password: oracle
+			- Connection Type: Custom JDBC
+			- Host: jdbc:oracle:thin:@//localhost:1521/orcl
+
 - SELECT table_name FROM all_tables
 - SELECT * FROM user_tab_cols WHERE table_name= 'MPA_TRANSACTION_STATUS'

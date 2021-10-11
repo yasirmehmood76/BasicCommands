@@ -20,6 +20,7 @@
 - source test.txt           //reloads file in terminal
 - control+c                 //halts terminal
 - command+shift+.           //when pressed in any folders, appears/disappears hidden files
+- echo $JAVA_HOME
 
 - If MacOS doesn't allow installation;
 	- Goto System Preferences > Security & Privacy > General

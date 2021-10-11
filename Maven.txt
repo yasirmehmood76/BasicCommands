@@ -1,4 +1,9 @@
 - Installation Process for MacOS
+	- Install Java
+		- Download jdk (Java SE Development Kit 8u202, i.e., jdk-8u202-macosx-x64.dmg) from Oracle website
+		- Run the setup. Once completed, create environment variable
+			- export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/contents/Home"
+		- java -version
 	- Download maven binary for Mac i.e. apache-maven-3.8.2-bin.tar.gz
 	- Extract the tar in a folder.
 	- Create Environment Variable.
@@ -17,5 +22,6 @@
 - mvn -Dspring.profiles.active=dev1,swagger,no-liquibase -Dspring.cloud.config.profile=dev1 -DskipTests=true
 - mvn -version
 - mvn --version
+- mvn -v
 - Adds dependency manually to local repository(C:\Users\p2969007\.m2\repository) using maven
   > mvn install:install-file -Dfile=C:/MUP/external_jars/mbo-dbencryption-utils/mbo-dbencryption-utils-1.0.0.jar -DgroupId=com.charter.spectrum.mobile -DartifactId=mbo-dbencryption-utils -Dversion=1.0.0 -Dpackaging=jar
