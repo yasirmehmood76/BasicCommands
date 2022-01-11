@@ -29,3 +29,6 @@
 		  {role: "readWriteAnyDatabase:, db: "admin"}]
 	}
   )
+
+MongoDB Compass
+- {status: "UNPROCESSED", "requestPayload.data.status.statusValue": "USG_80_PCT"}
