@@ -38,6 +38,14 @@
 	- git merge feature/dotrelease
 	- git push
 
+- Resolving merge conflicts (we are trying to merge release/changeLog to dev)
+	- git checkout dev
+	- git pull origin release/changeLog
+	- Git will highlight the lines which are causing conflicts, make the necessary changes
+	- commit the changes
+	- git push origin +dev
+	- merge the code
+
 *Git Hub*
 
 - Pushing and Existing Reop to GitHub
