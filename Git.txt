@@ -46,6 +46,15 @@
 	- git push origin +dev
 	- merge the code
 
+- Stashing
+	- git stash
+	- git stash list
+	- git stash apply
+	- git stash apply stash@{2}
+	- git stash apply --index
+	- git stash drop stash@{0}
+	- git stash branch <new branchname> (creating a branch from a stash)
+
 *Git Hub*
 
 - Pushing and Existing Reop to GitHub
