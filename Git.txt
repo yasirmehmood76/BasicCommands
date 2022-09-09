@@ -43,7 +43,7 @@
 	- git pull origin release/changeLog
 	- Git will highlight the lines which are causing conflicts, make the necessary changes
 	- commit the changes
-	- git push origin +dev
+	- git push origin +dev  //simple git push also works
 	- merge the code
 
 - Stashing
