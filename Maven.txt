@@ -24,4 +24,4 @@
 - mvn --version
 - mvn -v
 - Adds dependency manually to local repository(C:\Users\p2969007\.m2\repository) using maven
-  > mvn install:install-file -Dfile=C:/GitHub/external_jars/mpa-util-1.1.28.jar -DgroupId=com.spectrum.mobile -DartifactId=mpa-util -Dversion=1.1.28 -Dpackaging=jar
+  > mvn install:install-file -Dfile=C:/GitHub/external_jars/mbos-common-logging-1.0.6-40.jar -DgroupId=com.comcast.xfinity.mobile -DartifactId=mbos-common-logging -Dversion=1.0.6-40 -Dpackaging=jar

@@ -1,0 +1,76 @@
+/*----------------------------Streams-------------------------------------------------------------------*/
+//filter
+List<Integer> numbersList= Arrays.asList(10,15,20,25,30);
+List<Integer> evenNumberList= new ArrayList<Integer>();
+
+//storing data to another collection
+evenNumberList= numbersList.stream().filter(n->n%2==0).collect(Collectors.toList());
+
+numbersList.stream().filter(n->n%2==0).forEach(n->System.out.println(n));
+numbersList.stream().filter(n->n%2==0).forEach(System.out::println);
+
+//map
+List<String> vehicles= Arrays.asList("bus", "car", "bicycle", "flight", "train");
+List<String> vehiclesListinUpperCase= new ArrayList<String>();
+
+vehiclesListinUpperCase= vehicles.stream().map(name->name.toUpperCase()).collect(Collectors.toList());
+
+vehicles.stream().map(vname->vname.length()).forEach(len->System.out.println(len));
+vehicles.stream().map(vname->vname.length()).forEach(System.out::println);
+
+//filter+map (Collection -> stream -> filter -> map -> collect)
+List<Integer> multiples= new ArrayList<>();
+multiples= numbersList.stream.filter(n->n%2==0).map(n->n*3).collect(Collectors.toList());
+
+/*----------------------------forEach()-------------------------------------------------------------------*/
+Java 8 has introduced forEach method in java.lang.Iterable interface so that while writing code we focus on business logic. The forEach method takes java.util.function.Consumer object as an argument, 
+so it helps in having our business logic at a separate location that we can reuse. 
+Let’s see forEach usage with a simple example.
+
+package com.journaldev.java8.foreach;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.function.Consumer;
+import java.lang.Integer;
+
+public class Java8ForEachExample {
+
+	public static void main(String[] args) {
+		
+		//creating sample Collection
+		List<Integer> myList = new ArrayList<Integer>();
+		for(int i=0; i<10; i++) myList.add(i);
+		
+		//traversing using Iterator
+		Iterator<Integer> it = myList.iterator();
+		while(it.hasNext()){
+			Integer i = it.next();
+			System.out.println("Iterator Value::"+i);
+		}
+		
+		//traversing through forEach method of Iterable with anonymous class
+		myList.forEach(new Consumer<Integer>() {
+
+			public void accept(Integer t) {
+				System.out.println("forEach anonymous class Value::"+t);
+			}
+
+		});
+		
+		//traversing with Consumer interface implementation
+		MyConsumer action = new MyConsumer();
+		myList.forEach(action);
+		
+	}
+
+}
+
+//Consumer implementation that can be reused
+class MyConsumer implements Consumer<Integer>{
+
+	public void accept(Integer t) {
+		System.out.println("Consumer impl Value::"+t);
+	}
+}
